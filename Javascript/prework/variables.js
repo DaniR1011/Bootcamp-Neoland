@@ -6,7 +6,7 @@ var name; // Undefined -> No tiene valor
 var surname = "Rosales";
 console.log(surname);
 
-Let age = 34;
+let age = 34;
 console.log(age);
 
 const birthdate = "1986-10-10";

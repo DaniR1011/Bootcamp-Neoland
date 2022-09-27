@@ -4,7 +4,7 @@ function isLogged(user) {
     if (typeof user (== "string") {
         console.log("Debes tener un nombre")
 }
-    } else {
+    } else if {
         console.log("Debes iniciar sesión");
     }
 }
