@@ -130,5 +130,16 @@ const counterWords = [
     'code'
   ];
   function repeatCounter(param) {
-    
+    const repeat = [...param]
+    const repeat2 = [];
+    for(let k of repeat) {
+      if(Object.keys(repeat2).includes(k)) {
+        repeat2[k] += 1
+      } else {
+        repeat2[k] = 0
+      }
+    }
+    return repeat2
   }
+  const u = repeatCounter(counterWords)
+  console.log(u);

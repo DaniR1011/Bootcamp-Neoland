@@ -1,22 +1,27 @@
+// Iteración 1
 let myFavoriteHero = "Hulk";
 let x = 50;
 let h = 5;
 let y = 10;
 let z = h + y;
 
+// Iteración 2.1
 const character = {name: 'Jack Sparrow', age:10};
 character.age = 25;
 console.log(character.age);
 
+// Iteración 2.2
 let firstName = 'Jon';
 let lastName = 'Snow';
 let age = 24;
 console.log('Soy '+ firstName + lastName + ', tengo ' + age + ' años y me gustan los lobos' );
 
+// Iteración 2.3
 const toy1 = {name: 'Buss myYear', price: 19};
 const toy2 = {name: 'Rallo mcKing', price: 29};
 console.log(toy1.price + toy2.price);
 
+// Iteración 2.4
 let globalBasePrice = 10000;
 const car1 = {name: 'BMW m&m', basePrice: 50000, finalPrice: 60000};
 const car2 = {name: 'Chevrolet Corbina', basePrice: 70000, finalPrice: 80000};
@@ -27,6 +32,7 @@ console.log(car1.finalPrice);
 car2.finalPrice = car2.basePrice + globalBasePrice;
 console.log(car2.finalPrice);
 
+// Iteración 3
 let mult = 10*5;
 console.log(mult);
 
@@ -46,6 +52,7 @@ let m = 5;
 let i = c * m;
 console.log(i);
 
+// Iteración 4
 const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
 console.log(avengers[0]);
 
@@ -68,6 +75,7 @@ const rickAndMortyCharacters3 = ["Rick", "Beth", "Jerry", "Morty", "Summer", "La
 const array = rickAndMortyCharacters3.slice(1, 2);
 console.log(rickAndMortyCharacters3);
 
+// Iteración 5
 const number1 = 10;
 const number2 = 20;
 const number3 = 2;
@@ -95,6 +103,7 @@ if('number2 / 2 = number1' && 'number1 / 5 = number3'){
     console.log("number2 entre 2 es igual a number1 O number1 entre 5 es igual a number3");
 }
 
+// Iteración 6
 for(let n = 0; n <= 9; n++) {
     console.log(n)
 }
