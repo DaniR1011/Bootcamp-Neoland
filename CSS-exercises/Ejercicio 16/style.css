@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+  } 
+  .container {
+    height: 100;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 200px 800px;
+    grid-template-areas:
+    "header header"
+    "sidebar nav"
+    "sidebar article"
+    ;
+    grid-template-rows: 100px 100px 570px;
+    grid-gap: 4px;
+  }
+  
+  .container div {
+    padding: 15px;
+    font-size: 32px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: white;
+    display: grid;
+    grid-template-rows: 130px 130px 130px 130px;
+    grid-gap: 7px;
+
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #005ccd;
+    text-align: left;
+    height: 70px;
+  }
+
+  .header .logo{
+    color: black;
+  }
+
+  .menu ul,
+  .menu li {
+    font-size: 16px;
+    display: inline;
+    color: black;
+    text-align: right;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #d95231;
+    display: grid;
+    grid-gap: 50px;
+    height: 90vh;
+    
+  }
+  
+  .sidebar .photo {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 10px;
+  }
+  
+  
+  .sidebar .side-content {
+    background-color: rgb(107, 62, 186);
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav {
+    grid-area: nav;
+    background-color: rgb(107, 62, 186);
+    display: grid;
+    ;
+  }
+  
+  .nav ul li {
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline;
+  }
+  
+  .article {
+    grid-area: article;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 20px 20px 20px 20px;
+    grid-gap: 1px;
+  }
+  
+  .article p {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    text-align: left;
+  }
+  
+  .article .card {
+    background-color: #f1ab5b;
+    color: black;
+    text-align: center;
+    height: 110px;
+    display: grid;
+    grid-template-rows: 20px 20px 20px 20px;
+  }
+  
+  .card p {
+    color: black;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  
+  .card .title {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  @media (max-width: 900px) {
+    .cards { grid-template-columns: repeat(6, 1fr); }
+  }
+

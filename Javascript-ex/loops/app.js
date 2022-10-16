@@ -56,17 +56,12 @@ const toys1 = [
 	{id: 40, name: 'El gato con Guantes'},
 	{id: 40, name: 'El gato felix'},
 	]
-	set
+
+for (const toy of toys1) {
 	if(toy.name.includes('gato')) {
-	toys1.splice(toys1.indexOf(toy), 1)
+		toys1.splice(toys1.indexOf(toy), 1)
 	}
 }
-// for (let i = 0; i < cat; i++) {
-// 	if(toys1[toys1.indexOf(toy)].name.includes('gato')) {
-// 	toys1.splice(toys1.indexOf(toy), 1)
-// 	}
-// }
-console.log(toys1); 
 	
 // Ejercicio 7
 const popularToys = [];

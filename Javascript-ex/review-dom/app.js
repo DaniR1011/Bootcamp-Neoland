@@ -59,7 +59,6 @@ for (const country2 of countries3) {
 // elemento de la lista.
 const button = document.createElement('button');
 button.innerHTML = 'Delete last element';
-button.className = 'delete-last-element';
 document.body.appendChild(button);
 
 // button.addEventListener('click, event') {
