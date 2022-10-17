@@ -45,15 +45,20 @@ const users = [
         }
     },
 ]
-// for (const user of users) {
-//     for (const favoriteSound of users.favoritesSounds) {
-//         for (const key in favoritesSounds.waves) {
-//             if (Object.hasOwnProperty.call(objectkey).favoritesSounds.waves           
-                     
-//             }
-//         }
-//     }
-// } 
+let finalVolume = [];
+    for (const user of users) {
+    const {favoritesSounds} = user
+    const finalFavoritesSounds = Object.entries(favoritesSounds)
+     for (const favoriteSound of finalFavoritesSounds) {
+        finalVolume.push(favoriteSound[1].volume)
+    }
+}
+let total = 0;
+finalVolume.forEach(element => {
+    total += element
+});
+console.log(total/finalVolume.length)
+    
 
 // Ejercicio 4
 let animals = ['Caracol', 'Mosquito', 'Salamandra', 'Ajolote'];

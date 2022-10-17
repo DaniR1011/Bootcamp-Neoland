@@ -26,7 +26,7 @@ for (const car of cars) {
     li.innerHTML = 'Car';
     ul3.appendChild(li);
 }
-y.document.appendChild(ul3);
+y.appendChild(ul3);
 
 // 1.4 Crea dinamicamente en el html una lista de div que contenga un elemento 
 // h4 para el titulo y otro elemento img para la imagen.
@@ -57,14 +57,31 @@ for (const country2 of countries3) {
 
 // 1.5 Basandote en el ejercicio anterior. Crea un botón que elimine el último 
 // elemento de la lista.
+
 const button = document.createElement('button');
 button.innerHTML = 'Delete last element';
 document.body.appendChild(button);
 
-// button.addEventListener('click, event') {
+button.addEventListener('click', ev => {
+    const finalDiv = document.querySelectorAll('div')
+    const lastDiv = finalDiv[finalDiv.length-1]
+    document.body.removeChild(lastDiv)    
+    }   
+)
     
-// }
-
 // 1.6 Basandote en el ejercicio anterior. Crea un botón para cada uno de los 
 // elementos de las listas que elimine ese mismo elemento del html.
+ const button1 = document.querySelectorAll('li')
+ for (const singleButton of button1) {
+     const finalbutton = document.createElement('button')
+     finalbutton.innerHTML = 'Remove li'
+     singleButton.appendChild(finalbutton)
+ }
 
+ const newButton = document.querySelectorAll('li')
+ newButton.forEach(btn => { 
+ btn.addEventListener('click', ev => {
+     const element = ev.path[1]
+     element.remove()
+ })
+})
